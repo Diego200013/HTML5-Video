@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Multimedia</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="row" id="header">
+            <div class="col">
+                <h2>PROJECT HTML5</h2>
+                <h4>MULTIMEDIA</h4>
+            </div>
+        </header><!-- /header -->
+        <div class=" total row rum mt-5">
+            <div class="col-12 video">
+                <video id="vid" preload="metadata"><!-- I have three versions of the video encoded with
+         different codecs.  The browser will automatically
+         choose the first one it knows it can play. --> <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.webm" type="video/webm"> <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.ogg" type="video/ogg"> <source src="https://mainline.i3s.unice.fr/mooc/samuraiPizzacat.mp4" type="video/mp4"></video>
+                <div class="row times">
+                    <div class="time1 col-2 p-0">
+                        <span class="count" id="count1">00:00</span>
+                    </div>
+                    <div class="duration col-8 p-0" id="duration">
+                        <div class="progress" id="progress">
+                        
+                        </div>
+                    </div>
+                    <div class="time2 col-2 p-0">
+                        <span class="count" id="count2">04:30</span>
+                    </div>
+                </div>
+                <div class="controls row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="row">
+                                    <button class="back_video col-3" title="back_video" id="back_video"><i class="material-icons">skip_previous</i></button> <button class=" col-3" title="replay" id="current"><i class="material-icons">replay</i></button><button class="next_video col-3" id="next_video" title="next_video"><i class="material-icons">skip_next</i></button> <button class="col-3" id="back"><i class="material-icons">replay_10</i></button>
+                                </div>
+                            </div>
+                            <div class="col-7">
+                                <div class="row">
+                                    <button class="play col-4" id="play" title="play"><i class="material-icons">play_circle_filled</i></button> <button class=" col-2" id="next"><i class="material-icons">forward_10</i></button> <button title="Sound" class="volume col-2" id="volum"><i id="volumen_inicial" class="material-icons">volume_up</i><div class="change_volume">
+                                        
+                                       <div class="range">
+
+                                        <input type="range" class="range_value" min="0" step="0.1" max="1" name="">
+                                           
+                                       </div>
+
+
+                                    </div></button>
+
+                                    
+
+                                     <button title="Subtitles" class="cc col-2" id="cc"><i class="material-icons">closed_caption</i></button> <button title="zoom"class="zoom col-2" id="zoom"><i class="material-icons">zoom_out_map</i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="js/index.js"></script>    
+</body>
+</html>

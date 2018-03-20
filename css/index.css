@@ -1,0 +1,190 @@
+ @import url('https://fonts.googleapis.com/css?family=Frijole');
+ body {
+     background-color: #57BFBE;
+     text-align: center;
+     font-family: 'Frijole', cursive;
+ }
+ header {
+     background: -webkit-linear-gradient(#FFD380, white)
+ }
+ .video {
+     background: #FF5D42;
+     margin: 0 auto;
+     max-width: 500px;
+     padding: 3px;
+     border-radius: 15px;
+     outline: 1px solid white;
+     outline-offset: 10px;
+ }
+ video {
+     border-radius: 15px;
+     margin-top: 5px;
+     max-width: 100%;
+ }
+ .times {
+     max-width: 100%;
+     height: 20px;
+     background: black;
+     border-radius: 15px;
+     margin-left: 10px;
+     margin-right: 10px;
+     text-align: left;
+ }
+ .duration {
+     background: #000;
+     height: 20px;
+     width: 100%;
+     border: 1px solid black;
+ }
+ .progress {
+     background: #2977C7;
+     border: 1px solid black;
+     height: 18px;
+     width: 0;
+     border-radius: 0px;
+ }
+ #circle {
+     position: relative;
+     display: inline-block;
+     background: red;
+     width: 5px;
+     border-radius: 5px;
+     border: 1px solid black;
+ }
+ .time1, .time2 {
+     background: white;
+     border: 1px solid black;
+     font-size: 0.7rem;
+     width: 100%;
+     text-align: center;
+     height: 20px;
+ }
+ .time1 {
+     border-radius: 10px 0px 0px 0px;
+ }
+ .time2 {
+     border-radius: 0px 10px 0px 0px;
+ }
+ .count {
+     position: relative;
+     top: 2px;
+ }
+ .controls {
+     border: 1px solid #fff;
+     max-width: 100%;
+     height: 30px;
+     background: black;
+     border-radius: 0px 0px 15px 15px;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+ button {
+     background: white;
+     border: 1px solid black;
+     max-width: 100%;
+     height: 29px;
+ }
+ button:hover {
+     background: #50C1DD;
+ }
+ button:focus {
+     outline: 0;
+ }
+ .back_video {
+     border-radius: 0px 0px 0px 15px;
+ }
+ .zoom {
+     border-radius: 0px 0px 15px 0px;
+ }
+ .change_volume {
+     display: none;
+     position: absolute;
+     background: white;
+     border: 2px solid #50C1DD;
+     top: -85px;
+     left: -40px;
+     float: right;
+     clear: both;
+     transform: rotate(-90deg);
+ }
+ input[type=range] {
+     -webkit-appearance: none;
+     width: 100%;
+     margin: 13.8px 0;
+ }
+ input[type=range]:focus {
+     outline: none;
+ }
+ input[type=range]::-webkit-slider-runnable-track {
+     width: 100%;
+     height: 9px;
+     cursor: pointer;
+     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+     border-radius: 5px;
+ }
+ input[type=range]::-webkit-slider-thumb {
+     box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+     border: 1px solid white;
+     height: 20px;
+     width: 15px;
+     border-radius: 20px;
+     background: black;
+     cursor: pointer;
+     -webkit-appearance: none;
+     margin-top: -6px;
+ }
+ input[type='range'] {
+     display: block;
+     width: 120px;
+ }
+ input[type=range]::-webkit-slider-runnable-track {
+     background-color: black;
+ }
+ input[type=range]::-webkit-slider-runnable-track {
+     background-image: -webkit-linear-gradient(left, #fff 50%, #50C1DD 50%);
+ }
+ @media (max-width:450px) {
+     button {
+         padding: 0 !important;
+     }
+     .material-icons {
+         font-size: 15px !important;
+     }
+     .time1, .time2 {
+         font-size: 0.5rem;
+     }
+     .count {
+         top: 5px;
+     }
+     .change_volume {
+         background: white;
+         border: 1px solid #50C1DD;
+         margin-left: 5px;
+         top: -70px;
+         left: -40px;
+         float: right;
+         clear: both;
+         transform: rotate(-90deg);
+     }
+     input[type=range]::-webkit-slider-runnable-track {
+         width: 100%;
+         height: 3px;
+         cursor: pointer;
+         box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+         border-radius: 5px;
+     }
+     input[type=range]::-webkit-slider-thumb {
+         box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+         border: 1px solid white;
+         height: 15px;
+         width: 15px;
+         border-radius: 20px;
+         background: black;
+         cursor: pointer;
+         -webkit-appearance: none;
+         margin-top: -6px;
+     }
+     input[type='range'] {
+         display: block;
+         width: 100px;
+     }
